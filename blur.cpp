@@ -309,8 +309,8 @@ DllMain(HINSTANCE hInst, DWORD reason, LPVOID)
 				MemoryVP::InjectHook(AddressByVersion<uint32_t>(0, 0, 0, 0x48FEAF, 0x48FEBF, 0x48FDBF), enableTrailSetting, PATCH_CALL);
 
 				//CMBlur::AddRenderFx Type 4
-				MemoryVP::Nop(AddressByVersion<uint32_t>(0, 0, 0, 0x560FF9, 0x561019, 0x560EE9), 5);
-				MemoryVP::Nop(AddressByVersion<uint32_t>(0, 0, 0, 0x561259, 0x561279, 0x561149), 5);
+				//MemoryVP::Nop(AddressByVersion<uint32_t>(0, 0, 0, 0x560FF9, 0x561019, 0x560EE9), 5);
+				//MemoryVP::Nop(AddressByVersion<uint32_t>(0, 0, 0, 0x561259, 0x561279, 0x561149), 5);
 
 				char			dllName[MAX_PATH];
 				GetModuleFileName(hInst, dllName, MAX_PATH);
